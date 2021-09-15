@@ -13,6 +13,8 @@
 		852E263626EFA7C700B5CDB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852E263426EFA7C700B5CDB6 /* Main.storyboard */; };
 		852E263826EFA7C800B5CDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852E263726EFA7C800B5CDB6 /* Assets.xcassets */; };
 		852E263B26EFA7C800B5CDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852E263926EFA7C800B5CDB6 /* LaunchScreen.storyboard */; };
+		852E264626EFAA3500B5CDB6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E264526EFAA3500B5CDB6 /* MapViewController.swift */; };
+		852E264926EFAA9B00B5CDB6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E264826EFAA9B00B5CDB6 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		852E263526EFA7C700B5CDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		852E263726EFA7C800B5CDB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		852E263A26EFA7C800B5CDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		852E263C26EFA7C800B5CDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852E264526EFAA3500B5CDB6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		852E264826EFAA9B00B5CDB6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		85BD4DF726F22896006A01A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		852E262D26EFA7C700B5CDB6 /* Placeeo */ = {
 			isa = PBXGroup;
 			children = (
-				852E262E26EFA7C700B5CDB6 /* AppDelegate.swift */,
-				852E263026EFA7C700B5CDB6 /* SceneDelegate.swift */,
-				852E263226EFA7C700B5CDB6 /* ViewController.swift */,
-				852E263426EFA7C700B5CDB6 /* Main.storyboard */,
-				852E263726EFA7C800B5CDB6 /* Assets.xcassets */,
-				852E263926EFA7C800B5CDB6 /* LaunchScreen.storyboard */,
-				852E263C26EFA7C800B5CDB6 /* Info.plist */,
+				85BD4DF726F22896006A01A1 /* Info.plist */,
+				852E264726EFAA8F00B5CDB6 /* Model */,
+				852E264426EFA9B000B5CDB6 /* Resources */,
+				852E264326EFA98600B5CDB6 /* Controller */,
+				852E264226EFA97900B5CDB6 /* View */,
 			);
 			path = Placeeo;
+			sourceTree = "<group>";
+		};
+		852E264226EFA97900B5CDB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				852E263926EFA7C800B5CDB6 /* LaunchScreen.storyboard */,
+				852E263726EFA7C800B5CDB6 /* Assets.xcassets */,
+				852E263426EFA7C700B5CDB6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		852E264326EFA98600B5CDB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				852E263226EFA7C700B5CDB6 /* ViewController.swift */,
+				852E264526EFAA3500B5CDB6 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		852E264426EFA9B000B5CDB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				852E262E26EFA7C700B5CDB6 /* AppDelegate.swift */,
+				852E263026EFA7C700B5CDB6 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		852E264726EFAA8F00B5CDB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				852E264826EFAA9B00B5CDB6 /* Place.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +178,8 @@
 				852E263326EFA7C700B5CDB6 /* ViewController.swift in Sources */,
 				852E262F26EFA7C700B5CDB6 /* AppDelegate.swift in Sources */,
 				852E263126EFA7C700B5CDB6 /* SceneDelegate.swift in Sources */,
+				852E264626EFAA3500B5CDB6 /* MapViewController.swift in Sources */,
+				852E264926EFAA9B00B5CDB6 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
