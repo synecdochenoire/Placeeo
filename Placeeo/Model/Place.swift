@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Place {
+    var name : String
+    var lat : Double
+    var long : Double
+}

@@ -10,67 +10,80 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate {
-        
+    
+    let locationManager = CLLocationManager()
+    
+    let regionInMeters : Double = 5000
+    
+    
     @IBOutlet weak var mapView: MKMapView!
     
-    var locationManager : CLLocationManager!
     
-    
-    
-    let place = Place()
-    var placeArray = [Place]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkLocationServices()
         
-       
-
-        
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        determineCurrentLocation()
-    }
-    
-    
-    
-    
-    
-    func show(places: [Place]){
         
     }
-    
-    func clearPlaces() {
-       
-    }
-    
-}
-    //MARK: - CLLocation Manager Delegate
-    extension MapViewController : CLLocationManagerDelegate {
-        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            let mUserLocation:CLLocation = locations[0] as CLLocation
-            
-            let center = CLLocationCoordinate2D(latitude: mUserLocation.coordinate.latitude, longitude: mUserLocation.coordinate.longitude)
-            let mRegion = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-            mapView.setRegion(mRegion, animated: true)
-            
-        }
-        func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-            print("Error - locationManager: \(error.localizedDescription)")
-        }
-        //MARK: - Intance Methods
-        
-        func determineCurrentLocation(){
-            locationManager = CLLocationManager()
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    func checkLocationAuth() {
+        let manager = CLLocationManager()
+        switch manager.authorizationStatus {
+        case .authorizedAlways, .authorizedWhenInUse :
+            mapView.showsUserLocation = true
+            centerViewOnUserLocation()
+            locationManager.startUpdatingLocation()
+            break
+        case .restricted :
+            //show alert with info about
+            break
+        case .denied :
+            //show alert with instructions
+            break
+        case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
-            
-            if CLLocationManager.locationServicesEnabled(){
-                locationManager.startUpdatingLocation()
-            }
+        default:
+            break
             
         }
-        
-        
-        
     }
+    
+    func setupLocationManager(){
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+//MARK: - Zoom into current User location
+    func centerViewOnUserLocation() {
+        if let location = locationManager.location?.coordinate{
+            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+    
+    func checkLocationServices(){
+        if CLLocationManager.locationServicesEnabled(){
+            setupLocationManager()
+            checkLocationAuth()
+            
+        }else{
+            //show alert
+        }
+    }
+}
+
+//MARK: - CLLManager Delegate
+extension MapViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else {return}
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+    checkLocationAuth()
+    }
+}
 
