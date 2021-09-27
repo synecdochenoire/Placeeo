@@ -10,6 +10,10 @@ import MapKit
 import CoreLocation
 
 class MapView: UIView {
+    
+    //    let locationManager = CLLocationManager()
+    //    let regionInMeters : Double = 3000
+    
     @IBOutlet weak var mapView: MKMapView!
     
     func show(places: [Place]){
@@ -20,4 +24,17 @@ class MapView: UIView {
             mapView.addAnnotation(annotation)
         }
     }
+    
+    func clearPlaces(){
+        let annotations = self.mapView.annotations
+        if !annotations.isEmpty{
+            mapView.removeAnnotations(annotations)
+        }else{
+            print("There is no annotations to Delete")
+        }
+    }
 }
+
+
+
+

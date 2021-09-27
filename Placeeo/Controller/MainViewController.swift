@@ -32,6 +32,7 @@ class MainViewController: UIViewController, MKMapViewDelegate{
         ])
         
         mapView.show(places: places)
+        //mapView.clearPlaces()
     }
 }
 
