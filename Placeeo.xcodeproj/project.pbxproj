@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851B8AEF2709C788000BC199 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B8AEE2709C788000BC199 /* LocationManager.swift */; };
 		852E262F26EFA7C700B5CDB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E262E26EFA7C700B5CDB6 /* AppDelegate.swift */; };
 		852E263126EFA7C700B5CDB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E263026EFA7C700B5CDB6 /* SceneDelegate.swift */; };
 		852E263326EFA7C700B5CDB6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E263226EFA7C700B5CDB6 /* MainViewController.swift */; };
@@ -17,9 +18,13 @@
 		856F1C3E26F8C8E100AE06A7 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856F1C3D26F8C8E100AE06A7 /* MainViewController.storyboard */; };
 		85CE1A8A26FCD3900070FD9D /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CE1A8926FCD3900070FD9D /* MapView.xib */; };
 		85CE1A8C26FCE1250070FD9D /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE1A8B26FCE1250070FD9D /* UIView+Xib.swift */; };
+		BCAA3D5CA66315A04D8A7876 /* Pods_Placeeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029B113E3E3B8BC1E58733B8 /* Pods_Placeeo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029B113E3E3B8BC1E58733B8 /* Pods_Placeeo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Placeeo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACDDB171BDF958ED4D404FF /* Pods-Placeeo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Placeeo.release.xcconfig"; path = "Target Support Files/Pods-Placeeo/Pods-Placeeo.release.xcconfig"; sourceTree = "<group>"; };
+		851B8AEE2709C788000BC199 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		852E262B26EFA7C700B5CDB6 /* Placeeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Placeeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852E262E26EFA7C700B5CDB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		852E263026EFA7C700B5CDB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		85BD4DF726F22896006A01A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85CE1A8926FCD3900070FD9D /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		85CE1A8B26FCE1250070FD9D /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
+		D9AD30ACB0B91BA4DD5D3E9A /* Pods-Placeeo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Placeeo.debug.xcconfig"; path = "Target Support Files/Pods-Placeeo/Pods-Placeeo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAA3D5CA66315A04D8A7876 /* Pods_Placeeo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		243782EDF99F3400105154E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				029B113E3E3B8BC1E58733B8 /* Pods_Placeeo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B33A8A2659A1E3CB83B06B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD30ACB0B91BA4DD5D3E9A /* Pods-Placeeo.debug.xcconfig */,
+				7ACDDB171BDF958ED4D404FF /* Pods-Placeeo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		852E262226EFA7C700B5CDB6 = {
 			isa = PBXGroup;
 			children = (
 				852E262D26EFA7C700B5CDB6 /* Placeeo */,
 				852E262C26EFA7C700B5CDB6 /* Products */,
+				7B33A8A2659A1E3CB83B06B8 /* Pods */,
+				243782EDF99F3400105154E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +116,7 @@
 			children = (
 				852E263226EFA7C700B5CDB6 /* MainViewController.swift */,
 				852E264526EFAA3500B5CDB6 /* MapView.swift */,
+				851B8AEE2709C788000BC199 /* LocationManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 852E263F26EFA7C800B5CDB6 /* Build configuration list for PBXNativeTarget "Placeeo" */;
 			buildPhases = (
+				ABE61C98D3D547BFE97CD578 /* [CP] Check Pods Manifest.lock */,
 				852E262726EFA7C700B5CDB6 /* Sources */,
 				852E262826EFA7C700B5CDB6 /* Frameworks */,
 				852E262926EFA7C700B5CDB6 /* Resources */,
+				3EC5F15A3A21DEB10EDA5BFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +214,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EC5F15A3A21DEB10EDA5BFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Placeeo/Pods-Placeeo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Placeeo/Pods-Placeeo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Placeeo/Pods-Placeeo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE61C98D3D547BFE97CD578 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Placeeo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		852E262726EFA7C700B5CDB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -193,6 +264,7 @@
 				852E263326EFA7C700B5CDB6 /* MainViewController.swift in Sources */,
 				852E262F26EFA7C700B5CDB6 /* AppDelegate.swift in Sources */,
 				85CE1A8C26FCE1250070FD9D /* UIView+Xib.swift in Sources */,
+				851B8AEF2709C788000BC199 /* LocationManager.swift in Sources */,
 				852E263126EFA7C700B5CDB6 /* SceneDelegate.swift in Sources */,
 				852E264626EFAA3500B5CDB6 /* MapView.swift in Sources */,
 				852E264926EFAA9B00B5CDB6 /* Place.swift in Sources */,
@@ -331,6 +403,7 @@
 		};
 		852E264026EFA7C800B5CDB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9AD30ACB0B91BA4DD5D3E9A /* Pods-Placeeo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +424,7 @@
 		};
 		852E264126EFA7C800B5CDB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACDDB171BDF958ED4D404FF /* Pods-Placeeo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
