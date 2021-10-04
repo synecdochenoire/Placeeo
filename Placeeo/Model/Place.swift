@@ -11,4 +11,5 @@ struct Place {
     var name : String
     var lat : Double
     var long : Double
+    var identifier: String
 }
