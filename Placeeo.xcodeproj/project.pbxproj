@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		851B8AEF2709C788000BC199 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B8AEE2709C788000BC199 /* LocationManager.swift */; };
 		852E262F26EFA7C700B5CDB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E262E26EFA7C700B5CDB6 /* AppDelegate.swift */; };
 		852E263126EFA7C700B5CDB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E263026EFA7C700B5CDB6 /* SceneDelegate.swift */; };
 		852E263326EFA7C700B5CDB6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E263226EFA7C700B5CDB6 /* MainViewController.swift */; };
 		852E263826EFA7C800B5CDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852E263726EFA7C800B5CDB6 /* Assets.xcassets */; };
 		852E263B26EFA7C800B5CDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852E263926EFA7C800B5CDB6 /* LaunchScreen.storyboard */; };
 		852E264626EFAA3500B5CDB6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E264526EFAA3500B5CDB6 /* MapView.swift */; };
-		852E264926EFAA9B00B5CDB6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E264826EFAA9B00B5CDB6 /* Place.swift */; };
+		8555F4882714758D00FF6564 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555F4872714758D00FF6564 /* GooglePlacesManager.swift */; };
 		856F1C3E26F8C8E100AE06A7 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856F1C3D26F8C8E100AE06A7 /* MainViewController.storyboard */; };
-		85CE1A8A26FCD3900070FD9D /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CE1A8926FCD3900070FD9D /* MapView.xib */; };
 		85CE1A8C26FCE1250070FD9D /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE1A8B26FCE1250070FD9D /* UIView+Xib.swift */; };
+		85E95214272301B700CF0F5D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E95213272301B700CF0F5D /* Place.swift */; };
+		85E952162723046900CF0F5D /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E952152723046900CF0F5D /* MapView.xib */; };
+		85E95218272304B200CF0F5D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E95217272304B200CF0F5D /* LocationManager.swift */; };
 		BCAA3D5CA66315A04D8A7876 /* Pods_Placeeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029B113E3E3B8BC1E58733B8 /* Pods_Placeeo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		029B113E3E3B8BC1E58733B8 /* Pods_Placeeo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Placeeo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACDDB171BDF958ED4D404FF /* Pods-Placeeo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Placeeo.release.xcconfig"; path = "Target Support Files/Pods-Placeeo/Pods-Placeeo.release.xcconfig"; sourceTree = "<group>"; };
-		851B8AEE2709C788000BC199 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		852E262B26EFA7C700B5CDB6 /* Placeeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Placeeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852E262E26EFA7C700B5CDB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		852E263026EFA7C700B5CDB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,11 +32,13 @@
 		852E263726EFA7C800B5CDB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		852E263A26EFA7C800B5CDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		852E264526EFAA3500B5CDB6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		852E264826EFAA9B00B5CDB6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		8555F4872714758D00FF6564 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
 		856F1C3D26F8C8E100AE06A7 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		85BD4DF726F22896006A01A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85CE1A8926FCD3900070FD9D /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		85CE1A8B26FCE1250070FD9D /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
+		85E95213272301B700CF0F5D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		85E952152723046900CF0F5D /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = SOURCE_ROOT; };
+		85E95217272304B200CF0F5D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D9AD30ACB0B91BA4DD5D3E9A /* Pods-Placeeo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Placeeo.debug.xcconfig"; path = "Target Support Files/Pods-Placeeo/Pods-Placeeo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,10 +105,10 @@
 		852E264226EFA97900B5CDB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85E952152723046900CF0F5D /* MapView.xib */,
 				852E263926EFA7C800B5CDB6 /* LaunchScreen.storyboard */,
 				852E263726EFA7C800B5CDB6 /* Assets.xcassets */,
 				856F1C3D26F8C8E100AE06A7 /* MainViewController.storyboard */,
-				85CE1A8926FCD3900070FD9D /* MapView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,7 +118,6 @@
 			children = (
 				852E263226EFA7C700B5CDB6 /* MainViewController.swift */,
 				852E264526EFAA3500B5CDB6 /* MapView.swift */,
-				851B8AEE2709C788000BC199 /* LocationManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,7 +134,9 @@
 		852E264726EFAA8F00B5CDB6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				852E264826EFAA9B00B5CDB6 /* Place.swift */,
+				8555F4872714758D00FF6564 /* GooglePlacesManager.swift */,
+				85E95213272301B700CF0F5D /* Place.swift */,
+				85E95217272304B200CF0F5D /* LocationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				856F1C3E26F8C8E100AE06A7 /* MainViewController.storyboard in Resources */,
-				85CE1A8A26FCD3900070FD9D /* MapView.xib in Resources */,
+				85E952162723046900CF0F5D /* MapView.xib in Resources */,
 				852E263B26EFA7C800B5CDB6 /* LaunchScreen.storyboard in Resources */,
 				852E263826EFA7C800B5CDB6 /* Assets.xcassets in Resources */,
 			);
@@ -261,13 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8555F4882714758D00FF6564 /* GooglePlacesManager.swift in Sources */,
 				852E263326EFA7C700B5CDB6 /* MainViewController.swift in Sources */,
 				852E262F26EFA7C700B5CDB6 /* AppDelegate.swift in Sources */,
+				85E95214272301B700CF0F5D /* Place.swift in Sources */,
+				85E95218272304B200CF0F5D /* LocationManager.swift in Sources */,
 				85CE1A8C26FCE1250070FD9D /* UIView+Xib.swift in Sources */,
-				851B8AEF2709C788000BC199 /* LocationManager.swift in Sources */,
 				852E263126EFA7C700B5CDB6 /* SceneDelegate.swift in Sources */,
 				852E264626EFAA3500B5CDB6 /* MapView.swift in Sources */,
-				852E264926EFAA9B00B5CDB6 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 628BV4PHBF;
 				INFOPLIST_FILE = Placeeo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +437,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 628BV4PHBF;
 				INFOPLIST_FILE = Placeeo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
