@@ -32,8 +32,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GNf-ll-b5d" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="zYn-zV-Cyd"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g53-Pg-9sT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" tag="-1" contentMode="scaleToFill" largeTitles="YES" id="g53-Pg-9sT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
