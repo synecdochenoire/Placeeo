@@ -10,23 +10,14 @@ import MapKit
 import CoreLocation
 
 class MapView: UIView {
-    
     @IBOutlet weak var mapView: MKMapView!
-    
-    let manager = CLLocationManager()
     
     func show(places: [Place]){
         for place in places {
             let annotation = MKPointAnnotation()
             annotation.title = place.name
-            annotation.coordinate = place.coordinates
+            annotation.coordinate = CLLocationCoordinate2DMake(place.lat, place.long)
             mapView.addAnnotation(annotation)
         }
     }
-    func centerViewOnUserLocation() {
-        if let location = manager.location?.coordinate {
-        let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 4500, longitudinalMeters: 4500)
-            mapView.setRegion(region, animated: true)
-    }
-}
 }
