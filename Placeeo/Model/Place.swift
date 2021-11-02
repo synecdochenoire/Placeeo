@@ -2,12 +2,13 @@
 //  Place.swift
 //  Placeeo
 //
-//  Created by Pasha Berger on 22.10.2021.
+//  Created by Pasha Berger on 13.09.2021.
 //
 
 import Foundation
-import CoreLocation
+
 struct Place {
-    var name: String
-    var coordinates: CLLocationCoordinate2D
+    var name : String
+    var lat : Double
+    var long : Double
 }
