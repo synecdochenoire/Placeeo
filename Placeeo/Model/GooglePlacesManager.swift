@@ -8,15 +8,15 @@
 import Foundation
 import GooglePlaces
 import CoreLocation
+import UIKit
+
 final class GooglePlacesManager {
     
     let apiKey = "AIzaSyBLVcVo5N4mcs1PASpBMYzgpKuff_gkz8A"
-    
     static let shared = GooglePlacesManager()
+    private init (){}
     
     private let client = GMSPlacesClient.shared()
-    
-    private init (){}
     
     enum PlacesError: Error{
         case failedToFind
@@ -49,6 +49,7 @@ final class GooglePlacesManager {
                     let placeCoordinates = CLLocationCoordinate2D(latitude: lat, longitude: lng)
                     
                     return Place(name: name, coordinates: placeCoordinates)
+                    
                 }
                 completion(places)
             } catch {

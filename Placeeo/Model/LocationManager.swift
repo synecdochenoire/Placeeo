@@ -11,6 +11,8 @@ import CoreLocation
 
 class LocationManager: NSObject, CLLocationManagerDelegate {
     static let shared = LocationManager()
+    private override init() {}
+    
     let manager = CLLocationManager()
     var completion: ((CLLocation) -> Void)?
     

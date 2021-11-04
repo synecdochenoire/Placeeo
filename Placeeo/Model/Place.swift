@@ -6,8 +6,10 @@
 //
 
 import Foundation
-import CoreLocation
+import struct CoreLocation.CLLocationCoordinate2D
 struct Place {
     var name: String
-    var coordinates: CLLocationCoordinate2D
+    var coordinates: CLLocationCoordinate2D?
+    var indentifier: String?
+
 }
